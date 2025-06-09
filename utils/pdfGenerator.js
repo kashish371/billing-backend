@@ -12,7 +12,7 @@ export const generateInvoicePDF = (invoice, res) => {
   const PAGE_WIDTH = doc.page.width;
 
   // === Header Section: Logo Left, Company Info Right ===
-  const logoPath = path.resolve('assets', 'logo.jpeg');
+  const logoPath = path.resolve('assets', 'logo.jpg');
   if (fs.existsSync(logoPath)) {
     doc.image(logoPath, 30, 10, { width: 100 });
   }
