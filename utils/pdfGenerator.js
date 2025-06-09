@@ -14,7 +14,7 @@ export const generateInvoicePDF = (invoice, res) => {
   // === Header Section: Logo Left, Company Info Right ===
   const logoPath = path.resolve('assets', 'logo.jpg');
   if (fs.existsSync(logoPath)) {
-    doc.image(logoPath, 50, 10, { width: 100 });
+    doc.image(logoPath, 60, 30, { width: 100 });
   }
 
   // Company Info (right side)
